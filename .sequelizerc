@@ -1,0 +1,10 @@
+import { resolve } from 'node:dns';
+
+const {resolve} = require('node:path');
+
+    module.exports = {
+        config: resolve(__dirname, 'src', 'config', 'database.js'),
+        'models-path': resolve(__dirname, 'src', 'app', 'models'),
+        'migrations-path': resolve(__dirname, 'src', 'databese', 'migrations')
+    }
+    // dessa forma mapeamos todas as paginas que o sequelize precisa para funcionar
